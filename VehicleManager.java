@@ -14,9 +14,9 @@ public class VehicleManager extends MotorVehicle {
         oMotorcycle1.model = "Yamaha";
         oMotorcycle2.model = "Harley Davidson";
         oMotorcycle3.model = "Honda";
-        oMotorcycle1.running=false;
-        oMotorcycle2.running=false;
-        oMotorcycle3.running=false;
+        //oMotorcycle1.running=false; does not work 
+       //oMotorcycle2.running=false;
+       // oMotorcycle3.running=false;
 
         Car oCar1 = new Car();
         Car oCar2 = new Car();
@@ -26,9 +26,9 @@ public class VehicleManager extends MotorVehicle {
         oCar1.model = "Ford";
         oCar2.model = "Chevrolet";
         oCar3.model = "Toyota";
-        oCar1.running=false;
-        oCar2.running=false;
-        oCar3.running=false;
+        //oCar1.running=false;
+       // oCar2.running=false;
+        //oCar3.running=false;
 
         Scanner input = new Scanner(System.in);
         System.out.println("Choose a car to start: ");
@@ -79,7 +79,7 @@ public class VehicleManager extends MotorVehicle {
             System.out.print(aMotorcycle[m].model + (" ") + "\r\n");
             }
         for (int run=0; run < aCar.length; run++){
-            System.out.print(aMotorcycle[run].running + (" ") + "\r\n");
+            System.out.print(aMotorcycle[run].running + (" ") + "\r\n"); // I want to display all 6 vehicles status
 
             }
         }
